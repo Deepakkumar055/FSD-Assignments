@@ -1,0 +1,35 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Rating Component Styles */
+  .rating {
+    display: inline-block;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: #ffc107;
+  }
+  
+  .rating input:checked ~ label,
+  .rating input:checked ~ label:hover ~ label {
+    color: #ffc107;
+  }
+  
